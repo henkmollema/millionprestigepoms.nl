@@ -33,21 +33,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script type="application/ld+json">
   {
-    "@context": "http://schema.org/",
-    "@type": "LocalBusiness",
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "PetStore"],
+    "@id": "https://millionprestigepoms.nl/#business",
     "name": "Trimsalon Million Prestige Poms",
+    "alternateName": "Trimsalon One In a Million Poms",
+    "description": "Trimsalon & hobby-kennel in Enkhuizen, gespecialiseerd in het wassen, drogen, knippen en ozonbad voor Pomeranians en andere kleine rassen.",
     "image": "https://millionprestigepoms.nl/logo_og_black_millionprestigepoms.png",
-    "priceRange": "40-70",
-    "telephone": "+31651029224",
+    "logo": "https://millionprestigepoms.nl/logo_millionprestigepoms.png",
     "url": "https://millionprestigepoms.nl/",
+    "telephone": "+31651029224",
+    "priceRange": "€40-€70",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Bank transfer",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Katschip 22",
       "addressLocality": "Enkhuizen",
       "addressRegion": "Noord-Holland",
-      "postalCode": "1602CS",
+      "postalCode": "1602 CS",
       "addressCountry": "NL"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "52.7190155",
+      "longitude": "5.2666716"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Enkhuizen" },
+      { "@type": "AdministrativeArea", "name": "West-Friesland" },
+      { "@type": "AdministrativeArea", "name": "Noord-Holland" }
+    ],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -56,7 +72,46 @@
         "closes": "12:00"
       }
     ],
-    "sameAs": ["https://www.instagram.com/ofmillionprestigepoms", "https://www.facebook.com/oneinamillionpoms"]
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Trimsalon behandelingen",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "40",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wassen & drogen",
+            "description": "Wassen en drogen voor Pomeranians."
+          }
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "50",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wassen, drogen & knippen",
+            "description": "Volledige trimbeurt: wassen, drogen en knippen voor Pomeranians."
+          }
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "70",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Totaalpakket incl. ozonbad",
+            "description": "Volledige Pomeranian verzorging inclusief Ozon Milky Spa behandeling voor een glanzende, gezonde vacht."
+          }
+        }
+      ]
+    },
+    "sameAs": [
+      "https://www.instagram.com/millionprestigepoms",
+      "https://www.facebook.com/millionprestigepoms"
+    ]
   }
   </script>
   <style>
@@ -281,7 +336,8 @@
 <body>
 
   <header>
-    <img src="logo_millionprestigepoms.png" width="460" height="230" alt="Trimsalon Million Prestige Poms voor pomeranians">
+    <img src="logo_millionprestigepoms.png" width="460" height="230"
+      alt="Trimsalon Million Prestige Poms voor pomeranians">
     <h1>Trimsalon & hobby-kennel Enkhuizen</h1>
     <h2 class="subtitle">Welkom bij Million Prestige Poms<br>Dé Trimsalon voor je Pomeranian</h2>
     <p>
@@ -368,7 +424,8 @@
       </li>
       <li>
         <strong>Versterkt de vacht:</strong>
-        Stimuleert de haargroei en is een perfecte behandeling bij probleem vachten (<span title="Black Skin Disease">BSD</span>). Het zorgt voor een glanzende,
+        Stimuleert de haargroei en is een perfecte behandeling bij probleem vachten (<span
+          title="Black Skin Disease">BSD</span>). Het zorgt voor een glanzende,
         volle vacht.
       </li>
       <li>
@@ -400,7 +457,8 @@
       Af en toe hebben wij een nestje prachtige pomeranians / dwergkeesjes.
       Met liefde gefokt en uit geteste ouders. Neem contact op voor meer informatie.
     </p>
-    <img src="poster_millionprestigepoms.png" class="poster" alt="Poster van Million Prestige Poms nestjes" width="500" height="625" loading="lazy">
+    <img src="poster_millionprestigepoms.png" class="poster" alt="Poster van Million Prestige Poms nestjes" width="500"
+      height="625" loading="lazy">
   </section>
 
   <section class="galerij">
